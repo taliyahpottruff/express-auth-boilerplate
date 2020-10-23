@@ -1,19 +1,28 @@
 {
-  "name": "express-auth-boilerplate",
+  "name": "transexchange",
   "version": "1.0.0",
-  "description": "A boilerplate for an express backend with basic authentication.",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon server.js"
   },
-  "author": "Trenton Pottruff",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
+    "assert": "^2.0.0",
     "bcrypt": "^5.0.0",
-    "body-parser": "^1.19.0",
-    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongodb": "^3.6.0"
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.1",
+    "method-override": "^3.0.0",
+    "mongodb": "^3.6.2",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.6"
   }
 }

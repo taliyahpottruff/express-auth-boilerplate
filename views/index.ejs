@@ -1,0 +1,8 @@
+<% if (user) { %>
+    <h3>Hey <%= user.name %>!</h3>
+    <form action="/logout?_method=DELETE" method="POST"><button type="submit">Logout</button></form>
+<% } else { %>
+    <p>
+        <a href="/login">Login</a> or <a href="/register">Register</a>
+    </p>
+<% } %>
