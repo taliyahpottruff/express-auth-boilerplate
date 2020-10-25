@@ -1,4 +1,7 @@
 <h1>Register</h1>
+<% if(messages.error) { %>
+    <%= messages.error %>
+<% } %> 
 <form action="/register" method="POST">
     <div>
         <label for="name">Name</label>
@@ -11,6 +14,10 @@
     <div>
         <label for="password">Password</label>
         <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
     </div>
     <button type="submit">Register</button>
 </form>
